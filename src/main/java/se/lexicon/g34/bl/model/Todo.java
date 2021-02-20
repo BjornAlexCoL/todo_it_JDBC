@@ -12,6 +12,26 @@ public class Todo {
     private int assigneeId;
 
     //Constructors
+
+    public Todo() {
+    }
+
+    public Todo(int todoId, String title, String description, LocalDate deadline, boolean done, int assigneeId) {
+        this.todoId = todoId;
+        this.title = title;
+        this.description = description;
+        this.deadline = deadline;
+        this.done = done;
+        this.assigneeId = assigneeId;
+    }
+    public Todo(String title, String description, LocalDate deadline, boolean done, int assigneeId) {
+        this.title = title;
+        this.description = description;
+        this.deadline = deadline;
+        this.done = done;
+        this.assigneeId = assigneeId;
+    }
+
     public Todo(int todoId, String description) {
         this.todoId = todoId;
         this.description = description;
